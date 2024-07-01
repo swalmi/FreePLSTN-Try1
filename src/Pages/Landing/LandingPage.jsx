@@ -1,8 +1,9 @@
 // src/LandingPage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import list from "../images/list.png";
-import doctor from "../images/doctor.webp";
+import list from "../../images/list.png";
+import doctor from "../../images/doctor.webp";
+import "./Landing.css";
 
 const LandingPage = () => {
   return (

@@ -102,10 +102,6 @@ const CreateExamPage = () => {
         </div>
         <button type="submit">Generate PDF</button>
       </form>
-      <div className="exam-preview">
-        <h3>Preview</h3>
-        {/* Render exam preview here */}
-      </div>
     </div>
   );
 };

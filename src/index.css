@@ -8,8 +8,9 @@ body {
   padding: 0;
   background: linear-gradient(150deg, #dfdfdf, #9cb3ff);
   color: #00395f;
+  width: 100%;
 }
-p,
+
 h2 {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -47,87 +48,14 @@ button:active {
 }
 
 /* Navbar Styles */
-.navbar {
-  background-color: var(--color-primary);
-  color: #fff;
-  padding: 5px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin-bottom: 2rem;
-}
-.icons {
-  padding-right: 0.3rem;
-}
-.sheet {
-  width: 1.3vw;
-  margin-inline: 0.5rem;
-  margin-bottom: 0;
-  border-radius: 20%;
-  background-color: var(--color-primary);
-  background-blend-mode: screen;
-}
-.active {
-  background: #d9dcfa;
-  color: var(--color-gray-700);
-  border-radius: 4px;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.navbar ul li {
-  margin: 0 10px;
-}
-
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.navbar ul li a:hover {
-  background-color: #0b70b3;
-  border-radius: 4px;
-  transform: translateY(-2px);
-}
-
-.navbar ul li button {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.navbar ul li button:hover {
-  background-color: #0b70b3;
-  border-radius: 4px;
-  transform: translateY(-2px);
-}
 
 /* Form Styles */
-form {
-  margin-top: 20px;
-}
-.images {
-  width: 17rem;
-}
-.images-l {
-  width: 12rem;
-}
-.rl-images {
-  margin-inline: auto;
-  display: flex;
-  justify-content: center;
-}
+
 .form-group {
-  margin: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 3rem;
+  justify-content: center;
 }
 
 .form-group label {
@@ -182,7 +110,7 @@ button[type="submit"]:hover {
 .Resultes {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 70%;
   margin: 5rem auto;
   padding: 20px;
   background-color: #fff;
@@ -192,7 +120,7 @@ button[type="submit"]:hover {
   gap: 1rem;
 }
 .Questions__container {
-  align-items: center;
+  width: 90%;
 }
 
 .login-container h2,
@@ -218,9 +146,8 @@ button[type="submit"]:hover {
 .dashboard-container nav ul li {
   margin: 1rem 0;
 }
-.login {
+small {
   display: flex;
-  flex-direction: column;
 }
 
 .dashboard-container nav ul li a {
@@ -242,31 +169,7 @@ button[type="submit"]:hover {
 .help-support-container .faqs,
 .help-support-container .contact-form,
 .help-support-container .user-manuals {
-  margin-top: 20px;
-}
-
-.questions-section button,
-.grade-exams-container button,
-.view-results-container button {
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 2rem;
-}
-
-.questions-section button:hover,
-.grade-exams-container button:hover,
-.view-results-container button:hover {
-  background-color: #575757;
-}
-
-.grading-tools input[type="text"],
-.grading-tools input[type="number"] {
-  width: auto;
-  display: inline-block;
+  margin-top: 10px;
 }
 
 .uploaded-files h3,
@@ -286,258 +189,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.filter-buttons {
-  display: flex;
-  align-items: center;
-}
 
-.filter-buttons button,
-.filter-buttons select {
-  margin: 5px;
-  padding: 10px;
-  border: 1px solid #007bff;
-  background-color: #a7a6a6;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.filter-buttons button.active,
-.filter-buttons select.active {
-  background-color: #007bff;
-  color: white;
-  border: 1px solid #007bff;
-  border-radius: 10px;
-}
-.view-results-container {
-  padding: 20px;
-}
-
-.filter {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.sorting-buttons {
-  margin-bottom: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.results-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.results-table th,
-.results-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.results-table th {
-  background-color: #f2f2f2;
-  cursor: pointer;
-}
-
-.filter input {
-  padding: 8px;
-  width: 100%;
-  max-width: 300px;
-}
-.addButton {
-  width: 3vw;
-  background-color: #4858b6;
-  font-size: larger;
-  font-weight: 800;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 0;
-  color: #f2f2f2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.addButton:hover {
-  background-color: #24bbe0;
-}
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.Exam-container {
-  background-color: #84dcf1;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  border-bottom: 20px solid var(--color-primary);
-}
-.Exam-container:hover {
-  background-color: #0b70b3;
-}
-.dashboard-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin-left: 3rem;
-  gap: 1.5rem;
-}
 /* src/LandingPage.css */
-.landing-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
 
-.landing-header {
-  width: 100%;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
+@media screen and (max-width: 600px) {
+  .Grade {
+    width: 300px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .navbar ul li {
+    font-size: small;
+  }
 
-.landing-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Landing-nav-logo {
-  display: flex;
-}
-.Landing-logo {
-  width: 5rem;
-}
+  .navbar {
+    width: 4rem;
+    height: 100%;
+  }
 
-.landing-title {
-  font-size: 1.8em;
-  font-family: "Montserrat", sans-serif;
-}
-
-.landing-nav-links {
-  display: flex;
-  gap: 15px;
-}
-
-.landing-nav-links a,
-.landing-nav-button {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1em;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.landing-nav-button {
-  background-color: #007bff;
-}
-
-.landing-nav-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-.landing-home {
-  padding: 100px 20px 50px;
-  margin-top: 70px;
-}
-
-.landing-home h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.landing-home p {
-  font-size: 1.3em;
-  margin-bottom: 30px;
-}
-
-.landing-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.landing-button {
-  padding: 10px 20px;
-  font-size: 1.2em;
-  color: #fff;
-  background-color: var(--color-primary);
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.landing-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-.landing-button:active {
-  transform: translateY(0);
-}
-
-.landing-about {
-  padding: 50px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  margin: 20px;
-}
-
-.landing-about h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.landing-about p {
-  font-size: 1.2em;
-  font-family: "Open Sans", sans-serif;
-}
-
-.landing-footer {
-  width: 100%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.landing-footer p {
-  margin: 0;
-  font-size: 0.9em;
-}
-.Grade {
-  max-width: 550px;
-  width: fit-content;
-}
-.social-signup {
-  margin-top: 20px;
-}
-
-.google-btn {
-  background-color: #fff;
-  color: var(--color-primary);
-  padding: 10px 20px;
-
-  border: 1px solid #ccc;
-
-  border-radius: 5px;
-
-  cursor: pointer;
-}
-
-.google-btn:hover {
-  background-color: #f2f2f2;
-}
-
-.google-btn svg {
-  margin-right: 10px;
+  .login-container,
+  .register-container,
+  .create-exam-container,
+  .upload-exam-container,
+  .grade-exams-container,
+  .view-results-container,
+  .profile-container,
+  .settings-container,
+  .Error-container,
+  .Questions__container,
+  .Resultes__container,
+  .Resultes {
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin-left: 4.3rem;
+    align-content: center;
+  }
+  .container {
+    margin-left: 4.3rem;
+    width: 70%;
+  }
+  .images {
+    width: 12rem;
+  }
 }

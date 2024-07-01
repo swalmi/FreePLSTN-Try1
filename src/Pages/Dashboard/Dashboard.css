@@ -1,0 +1,35 @@
+.addButton {
+  width: 40px;
+  background-color: #4858b6;
+  font-size: larger;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0;
+  color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.addButton:hover {
+  background-color: #24bbe0;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Exam-container {
+  background-color: #84dcf1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-bottom: 20px solid var(--color-primary);
+}
+.Exam-container:hover {
+  background-color: #0b70b3;
+}
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-left: 3rem;
+  gap: 1.5rem;
+}

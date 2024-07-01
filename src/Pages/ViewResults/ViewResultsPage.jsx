@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from "react";
 import { useTable, useSortBy, useFilters } from "react-table";
-import { DUMMY_Resulte } from "../data.js";
+import { DUMMY_Resulte } from "../../data.js";
 import { jsPDF } from "jspdf";
 import autoTable from "jspdf-autotable";
 import * as XLSX from "xlsx";
+import "./ViewResults.css";
 
 const ViewResultsPage = () => {
   const [resultes, setResultes] = useState(DUMMY_Resulte);

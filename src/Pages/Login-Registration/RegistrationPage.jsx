@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import student from "../images/student.png";
+import student from "../../images/student.png";
 import { FaGoogle } from "react-icons/fa6";
+import "./Login-Registration.css";
 
 const RegistrationPage = () => (
   <div className="register-container">

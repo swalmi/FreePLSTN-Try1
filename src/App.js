@@ -1,18 +1,18 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import LoginPage from "./Pages/LoginPage.jsx";
-import RegistrationPage from "./Pages/RegistrationPage.jsx";
-import Dashboard from "./Pages/Dashboard";
+import LoginPage from "./Pages/Login-Registration/LoginPage.jsx";
+import RegistrationPage from "./Pages/Login-Registration/RegistrationPage.jsx";
+import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import CreateExamPage from "./Pages/CreateExamPage.jsx";
 import UploadExamPage from "./Pages/UploadExamPage.jsx";
-import GradeExamsPage from "./Pages/GradeExamsPage.jsx";
-import ViewResultsPage from "./Pages/ViewResultsPage.jsx";
+import GradeExamsPage from "./Pages/GradeExams/GradeExamsPage.jsx";
+import ViewResultsPage from "./Pages/ViewResults/ViewResultsPage.jsx";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import SettingsPage from "./Pages/SettingsPage.jsx";
-import Navbar from "./Pages/Navbar.jsx";
+import Navbar from "./Pages/Navbar/Navbar.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
-import LandingPage from "./Pages/LandingPage.jsx";
+import LandingPage from "./Pages/Landing/LandingPage.jsx";
 
 function App() {
   const location = useLocation();

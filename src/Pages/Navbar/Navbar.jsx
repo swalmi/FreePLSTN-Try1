@@ -6,6 +6,7 @@ import { BsPersonCircle } from "react-icons/bs";
 import { LuFileBarChart2 } from "react-icons/lu";
 import { IoSettings, IoLogOut } from "react-icons/io5";
 import { GiNotebook } from "react-icons/gi";
+import "./Navbar.css";
 
 const Navbar = () => (
   <nav className="navbar">

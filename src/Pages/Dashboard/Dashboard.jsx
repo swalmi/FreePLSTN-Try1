@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdAddToPhotos } from "react-icons/md";
-import { DUMMY_Exams } from "../data.js";
+import { DUMMY_Exams } from "../../data.js";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   const [Exams, setExams] = useState(DUMMY_Exams);

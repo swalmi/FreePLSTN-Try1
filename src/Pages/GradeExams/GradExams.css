@@ -1,0 +1,55 @@
+.questions-section button,
+.grade-exams-container button,
+.view-results-container button {
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.questions-section button:hover,
+.grade-exams-container button:hover,
+.view-results-container button:hover {
+  background-color: #575757;
+}
+
+.grading-tools input[type="text"],
+.grading-tools input[type="number"] {
+  width: auto;
+  display: inline-block;
+}
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  background-color: #a7a6a6;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.filter-buttons button.active,
+.filter-buttons select.active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+}
+.Grade {
+  max-width: 700px;
+}
+@media screen and (max-width: 600px) {
+  .Grade {
+    width: 300px;
+  }
+}
