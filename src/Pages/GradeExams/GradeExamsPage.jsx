@@ -51,6 +51,10 @@ const GradeExamsPage = () => {
               </button>
             </div>
             <div>
+                <input type="number" className="filterByNumber" placeholder="Enter a Question number to display"
+                />
+            </div>
+            <div>
               <button
                 className={activeFilter === 2 ? "active" : ""}
                 onClick={() => filterQuestions(2)}
@@ -111,7 +115,7 @@ const GradeExamsPage = () => {
                   src={question.Question}
                   alt={`Question ${question.id}`}
                 />
-                <input type="number" />
+                <input type="number" placeholder="Enter grade" />
               </div>
             ))}
           </div>

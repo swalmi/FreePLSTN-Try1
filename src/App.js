@@ -7,6 +7,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import CreateExamPage from "./Pages/CreateExamPage.jsx";
 import UploadExamPage from "./Pages/UploadExamPage.jsx";
 import GradeExamsPage from "./Pages/GradeExams/GradeExamsPage.jsx";
+import DarkVariantExample from "./Pages/GradeExamsSlide/GradeExamsSlide.jsx";
 import ViewResultsPage from "./Pages/ViewResults/ViewResultsPage.jsx";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import SettingsPage from "./Pages/SettingsPage.jsx";
@@ -26,7 +27,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/create-exam" element={<CreateExamPage />} />
         <Route path="/upload-exam" element={<UploadExamPage />} />
-        <Route path="/grade-exams" element={<GradeExamsPage />} />
+        <Route path="/grade-exams" element={<DarkVariantExample />} />
+        <Route path="/grade-exams-slide" element={<DarkVariantExample />} />
         <Route path="/view-results" element={<ViewResultsPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/settings" element={<SettingsPage />} />

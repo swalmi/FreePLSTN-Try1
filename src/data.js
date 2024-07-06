@@ -3,12 +3,62 @@ import Q3 from "./images/Q3.jpg";
 import Q4 from "./images/Q4.jpg";
 import BubbleQ from "./images/Bubble.jpg";
 
+export const Questions = [{
+  src: BubbleQ,
+    alt: 'Question 2',
+    label: 'First slide label',
+    description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    fullMark: 10,
+    Id: 1000
+  },
+  {
+    src:  Q2,
+    alt: 'Second slide',
+    label: 'Second slide label',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    fullMark: 15,
+    Id: 1001},
+  {
+      src:  Q2,
+      alt: 'Second slide',
+      label: 'Second slide label',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      fullMark: 15,
+      Id: 1002},
+  {
+        src:  Q2,
+        alt: 'Second slide',
+        label: 'Second slide label',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        fullMark: 15,
+        Id: 1003},
+    {
+          src:  Q2,
+          alt: 'Second slide',
+          label: 'Second slide label',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          fullMark: 15,
+          Id: 1004},
+    {
+            src:  Q2,
+            alt: 'Second slide',
+            label: 'Second slide label',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            fullMark: 15,
+            Id: 1005}
+    
+
+]
+
+
+
 export const DUMMY_WrittenQuestions = [
   {
     id: 1,
     Question: Q2,
     StudentID: 101,
     QType: 2,
+    fullMark: 10
   },
   {
     id: 2,

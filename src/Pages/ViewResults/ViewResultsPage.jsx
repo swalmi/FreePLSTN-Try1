@@ -97,7 +97,8 @@ const ViewResultsPage = () => {
   };
 
   return (
-    <div className="view-results-container">
+    <div className=" ">
+    <div className="view-results-container ">
       <h2>View Results</h2>
       <div className="filter">
         <input
@@ -166,6 +167,7 @@ const ViewResultsPage = () => {
       <button type="button" onClick={() => handleExport("excel")}>
         Export as Excel
       </button>
+    </div>
     </div>
   );
 };
