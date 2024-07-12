@@ -1,66 +1,77 @@
-// Navbar.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUpload, FaFileSignature } from "react-icons/fa";
-import { BsPersonCircle } from "react-icons/bs";
-import { LuFileBarChart2 } from "react-icons/lu";
-import { IoSettings, IoLogOut } from "react-icons/io5";
-import { GiNotebook } from "react-icons/gi";
+import { FaUser } from "react-icons/fa";
+import { BsFillCheckSquareFill } from "react-icons/bs";
 import "./Navbar.css";
 
-const Navbar = () => (
-  <nav className="navbar">
-    <ul>
-      <li>
-        <NavLink activeclassName="active" to="/dashboard">
-          <FaHome className="icons" />
-          Dashboard
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/create-exam">
-          <FaFileSignature className="icons" />
-          Create Exam
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/upload-exam">
-          <FaUpload className="icons" />
-          Upload Exam
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/grade-exams">
-          <GiNotebook className="icons" />
-          Grade Exams
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/view-results">
-          <LuFileBarChart2 className="icons" />
-          View Results
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/profile">
-          <BsPersonCircle className="icons" />
-          Profile
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/settings">
-          <IoSettings className="icons" />
-          Settings
-        </NavLink>
-      </li>
-      <li>
-        <NavLink activeclassName="active" to="/login">
-          <IoLogOut className="icons" />
-          Logout
-        </NavLink>
-      </li>
-    </ul>
-  </nav>
-);
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const heroHeight = document.querySelector(".hero").offsetHeight;
+      setScrolled(scrollTop > heroHeight * 0.1);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <span className="logo">
+        <BsFillCheckSquareFill className="logo-icon" />
+        freePLSTN
+      </span>
+      <ul className="left-links">
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/dashboard">
+            Dashboard
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/create-exam">
+            Create Exam
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/upload-exam">
+            Upload Exam
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/grade-exams">
+            Grade Exams
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/view-results">
+            View Results
+          </NavLink>
+        </li>
+      </ul>
+      <ul className="right-links">
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/profile">
+            <FaUser className="icons" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink' activeClassName="active" to="/settings">
+            Settings
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className='navlink login' activeClassName="active" to="/login">
+            Login
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;

@@ -1,81 +1,95 @@
 .navbar {
-  background-color: var(--color-primary);
-  color: #fff;
-  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px 60px;
   position: fixed;
-  width: 100%;
   top: 0;
-  margin-bottom: 2rem;
-  z-index: 100000000000000;
+  left: 0;
+  right: 0;
+  z-index: 1000000;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
-.icons {
-  padding-right: 0.3rem;
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.sheet {
-  width: 1.3vw;
-  margin-inline: 0.5rem;
-  margin-bottom: 0;
-  border-radius: 20%;
-  background-color: var(--color-primary);
-  background-blend-mode: screen;
+
+.logo-icon {
+  font-size: 2rem;
+  color: #D3F36B;
+  font-weight: 900;
+  margin-right: 10px;
 }
-.active {
-  background: #d9dcfa;
-  color: var(--color-gray-700);
-  border-radius: 4px;
+
+.logo {
+  font-size: 1.5rem;
+  font-family: fantasy;
+  font-weight: 400;
+  color: black;
 }
 
 .navbar ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar ul li {
-  margin: 0 10px;
-  width: fit-content;
+.left-links {
+  display: flex;
+  align-items: center;
 }
 
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
+.left-links .navlink {
+  color: black !important;
+}
+
+.left-links .navlink:hover {
+  color: #D3F36B;
+}
+
+.login {
+  border: 2px solid #D3F36B;
   padding: 10px;
 }
 
-.navbar ul li a:hover {
-  background-color: #0b70b3;
-  border-radius: 4px;
-  transform: translateY(-2px);
+.login:hover {
+  background-color: #D3F36B !important;
 }
 
-.navbar ul li button {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
+.right-links {
+  display: flex;
+  align-items: center;
 }
 
-.navbar ul li button:hover {
-  background-color: #0b70b3;
-  border-radius: 4px;
-  transform: translateY(-2px);
+.left-links li,
+.right-links li {
+  margin-left: 15px;
 }
-@media screen and (max-width: 600px) {
-  .navbar ul {
-    flex-direction: column;
-    justify-content: space-around;
-    height: 90%;
-  }
-  .navbar ul li {
-    font-size: small;
-  }
 
-  .navbar {
-    width: 4rem;
-    height: 100%;
-  }
+.right-links li:first-child {
+  margin-left: auto; /* Pushes the first right-link to the far right */
+}
+
+.icons {
+  margin-right: 5px;
+  font-size: 20px; /* Adjust icon size */
+}
+
+/* Styling for right-links when scrolled */
+.navbar.scrolled .right-links .navlink {
+  color: black !important;
+}
+
+.navbar.scrolled .right-links .navlink:hover {
+  color: yellow !important;
+}
+
+.navbar.scrolled .login {
+  background-color: yellow !important;
+  color: black !important;
 }

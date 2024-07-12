@@ -1,22 +1,19 @@
-/* Global Styles */
+Global Styles
 :root {
   --color-primary: #0ea9f1;
+  --font-size-primary: 1rem;
 }
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(150deg, #dfdfdf, #9cb3ff);
-  color: #00395f;
+  /* background: linear-gradient(150deg, #dfdfdf, #9cb3ff); */
+  /* color: #00395f; */
   width: 100%;
 }
 
-h2 {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding-left: 1rem;
-  margin-bottom: 0;
-}
+
+
 button {
   padding: 5px 10px;
   font-size: 1em;
@@ -44,7 +41,7 @@ button:active {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 /* Navbar Styles */
@@ -157,7 +154,7 @@ small {
 }
 
 .dashboard-container nav ul li a:hover {
-  background-color: #0b70b3;
+  background-color: #D3F36B;
 }
 
 .create-exam-container .questions-section,
@@ -234,4 +231,44 @@ code {
   .images {
     width: 12rem;
   }
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../static/Signika-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../static/Signika-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../static/Signika-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../static/Signika-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../static/Signika-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Signika', sans-serif;
 }

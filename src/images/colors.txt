@@ -1,0 +1,3 @@
+yellow:			D3F36B
+gray:			5B6370
+Light:			EBEAE4
